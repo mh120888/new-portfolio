@@ -1,0 +1,43 @@
+.home-header {
+	display: table;
+	width: 100%;
+	padding: 0 0 30px;
+	.img-wrapper, .text-wrapper {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.img-wrapper {
+		width: 25%;
+	}
+	.text-wrapper {
+		text-align: left;
+		width: 75%;
+		padding-left: 16px;
+	}
+	h1	{
+		font-size: 3em;
+		line-height: 1;
+		margin-bottom: .25em;
+		padding-bottom: .25em;
+		border-bottom: solid 1px;
+	}
+	h2	{
+		margin: 0 auto .5em;
+		font-size: 2em;
+	}
+}
+
+.section h2 {
+	font-size: 1.75em;
+	font-weight: 700;
+}
+
+
+.label	{
+	font-weight: 700;
+}
+
+.contact-info {
+	display: inline-block;
+	padding-right: 16px;
+}

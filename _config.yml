@@ -1,0 +1,17 @@
+# Site settings
+title: Matthew Higgins | Web Developer
+email: matthew.alan.higgins@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Matthew Higgins is a web developer currently located in the Los Angeles area. Since 2014 he has worked primarily as a front end developer,
+  but he also has experience as a full stack Rails developer.
+footer_info: > # this means to ignore newlines until "baseurl:"
+  I am a web developer currently located in the Los Angeles area. Since 2014 I have worked primarily as a front end developer,
+  but I also have experience with full stack Rails development.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: matthewalanhiggins
+github_username:  mh120888
+linkedin: https://www.linkedin.com/in/matthewalanhiggins⁄
+
+# Build settings
+markdown: kramdown
