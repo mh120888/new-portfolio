@@ -2,46 +2,42 @@
 layout: home
 projects:
 - {
-    name: "Lois Brenner",
-    url: "http://www.divorcelawyerny.com/",
-    disclaimer: '*'
-  }
+name: "Wildlife Lawyer",
+url: "http://www.wildlifelawyer.com/",
+disclaimer: '*'
+}
 - {
-    name:  "Chestnut EP",
-    url: "http://www.chestnutep.com/",
-    disclaimer: '*'
-  }
-- {
-    name: "Wildlife Lawyer",
-    url: "http://2015redesignwildlifelawyer.scorpionlocal.com/",
-    disclaimer: '*'
-  }
+name:  "Chestnut EP",
+url: "http://www.chestnutep.com/",
+disclaimer: '*'
+}
 ---
 
 <div class="home">
+  <section class='section'>
+    <h2>Recent Work</h2>
 
-  <h2>Recent Work</h2>
+    <ul class='post-list'>
+      {% for project in page.projects %}
+      <li><a href="{{ project.url }}" target='_blank'>{{ project.name }}{{ project.disclaimer }}</a></li>
+      {% endfor %}
+    </ul>
+    <small>*These projects were created in my position as a senior front-end developer at Scorpion Internet Marketing. I served as the technical lead on the development of these projects in collaboration with designers, content developers, and other individuals on my team.</small>
+  </section>
+  <section class='section'>
+    <h2>Blog</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <ul class='post-list'>
-    {% for project in page.projects %}
-    <li><a href="{{ project.url }}" target='_blank'>{{ project.name }}{{ project.disclaimer }}</a></li>
-    {% endfor %}
-  </ul>
-  <small>*These projects were created in my position as a senior front-end developer at Scorpion Internet Marketing. I served as the technical lead on the development of these projects in collaboration with designers, content developers, and other individuals on my team.</small>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+      {% endfor %}
+    </ul>
 
-  <h2>Blog</h2>
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </section>
 </div>

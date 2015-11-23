@@ -4,7 +4,7 @@
 	padding: 0 0 30px;
 	.img-wrapper, .text-wrapper {
 		display: table-cell;
-		vertical-align: middle;
+		vertical-align: top;
 	}
 	.img-wrapper {
 		width: 25%;
@@ -27,9 +27,12 @@
 	}
 }
 
-.section h2 {
-	font-size: 1.75em;
-	font-weight: 700;
+.section {
+	margin: 0 auto 2em;
+	h2 {
+		font-size: 1.75em;
+		font-weight: 700;
+	}
 }
 
 
@@ -40,4 +43,46 @@
 .contact-info {
 	display: inline-block;
 	padding-right: 16px;
+}
+
+@media screen and (max-width:600px) {
+	body {
+		padding: 1em;
+	}
+	.site-title {
+		font-size: 5vw;
+		text-align: center;
+	}
+	.virtual-page {
+		margin: 0 auto;
+	}
+	.home-header {
+		h1 {
+			font-size: 2.5em;
+		}
+		.img-wrapper, .text-wrapper {
+			display: block;
+			padding: 0;
+			width: 100%;
+		}
+		.img-wrapper {
+			margin-bottom: 1em;
+			text-align: center;
+		}
+	}
+	.section h2 {
+		border-bottom: solid 1px;
+	}
+	.section li h2 {
+		border-bottom: none;
+	}
+	.post-link {
+		font-size: 18px;
+	}
+	.contact-info .label {
+		display: block;
+	}
+	.site-nav {
+		display: none;
+	}
 }
