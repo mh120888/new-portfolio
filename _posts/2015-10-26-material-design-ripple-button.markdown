@@ -9,8 +9,8 @@ categories: design
 When a user clicks on a button, a ripple appears on the surface of the button that radiates outward from the location of the click and then fades away, much like a ripple appears on the surface of still water when someone tosses in a pebble.
 
 Here's a quick demo:
-<iframe height='268' scrolling='no' src='//codepen.io/matthewalanhiggins/embed/XmEPPM/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/matthewalanhiggins/pen/XmEPPM/'>Ripple Button (v2)</a> by Matthew Higgins (<a href='http://codepen.io/matthewalanhiggins'>@matthewalanhiggins</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
+<p data-height="268" data-theme-id="0" data-slug-hash="XmEPPM" data-default-tab="result" data-user="matthewalanhiggins" class='codepen'>See the Pen <a href='http://codepen.io/matthewalanhiggins/pen/XmEPPM/'>Ripple Button (v2)</a> by Matthew Higgins (<a href='http://codepen.io/matthewalanhiggins'>@matthewalanhiggins</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ##Why?
 The simplest answer is that sometimes it’s just nice to see something a bit cool and different.
