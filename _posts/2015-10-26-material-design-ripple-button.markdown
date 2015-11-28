@@ -14,6 +14,8 @@ Here's a quick demo:
 
 <script async='async' src="//assets.codepen.io/assets/embed/ei.js"></script>
 
+This was heavily inspired by [Dennis Gaebel's article on codrops](http://tympanus.net/codrops/2015/09/14/creating-material-design-ripple-effects-svg){:target='_blank'}. I wanted to go through his tutorial and recreate it myself, with some modifications to make it more reusable, and I wrote this post to describe the process in a simpler way.
+
 ##Why?
 The simplest answer is that sometimes it’s just nice to see something a bit cool and different.
 
