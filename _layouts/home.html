@@ -11,8 +11,8 @@
             <div class='text-wrapper'>
                 <h1>Matthew Higgins</h1>
                 <h2>Web Developer</h2>
-                <span class='contact-info'><span class='label'>Email:</span> {{ site.email }}</span>
-                <span class='contact-info'><span class='label'>GitHub:</span> {{  site.github_username }}</span>
+                <span class='contact-info'><span class='label'>Email:</span> <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+                <span class='contact-info'><span class='label'>GitHub:</span> <a href="https://github.com/{{ site.github_username }}">{{  site.github_username }}</a></span>
             </div>
         </header>
         <div class="wrapper">
