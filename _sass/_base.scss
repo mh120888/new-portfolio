@@ -101,10 +101,31 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
-
+    display: inline-block;
+    position: relative;
+    &:before, &:after {
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        background-color: $text-color;
+        transition: .5s all ease;
+        width: 50%;
+        content: '';
+        transform: scaleX(0);
+    }
+    &:before {
+        left: 0%;
+        transform-origin: right;
+    }
+    &:after {
+        left: 50%;
+        transform-origin: left;
+    }
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+    }
+    &:hover:before, &:hover:after {
+        transform: scaleX(1);
     }
 }
 
