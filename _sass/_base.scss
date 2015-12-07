@@ -99,15 +99,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: lighten($brand-color, 10%);
     text-decoration: none;
     display: inline-block;
     position: relative;
+    font-weight: 400;
     &:before, &:after {
         position: absolute;
         bottom: 0;
-        height: 1px;
-        background-color: $text-color;
+        height: 2px;
+        background-color: $brand-color;
         transition: .5s all ease;
         width: 50%;
         content: '';
@@ -122,7 +123,7 @@ a {
         transform-origin: left;
     }
     &:hover {
-        color: $text-color;
+        color: $brand-color;
     }
     &:hover:before, &:hover:after {
         transform: scaleX(1);
