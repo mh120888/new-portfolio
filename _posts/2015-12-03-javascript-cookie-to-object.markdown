@@ -3,6 +3,7 @@ layout: post
 title:  "Turning a JS Cookie into a JS Object"
 date:   2015-12-03
 categories: tech
+comments: true
 ---
 
 Most of the time, you don't have to deal with cookies directly. Frameworks like Rails provide an easy way to set cookies, session variables, etc. without ever having to leave Ruby world.

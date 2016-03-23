@@ -3,6 +3,7 @@ layout: post
 title:  "Why You Shouldn’t Obsess About PageSpeed Insights"
 date:   2016-03-20
 categories: tech
+comments: true
 ---
 
 ## Short Reason:

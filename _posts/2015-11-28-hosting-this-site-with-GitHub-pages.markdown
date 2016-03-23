@@ -3,6 +3,7 @@ layout: post
 title:  "Hosting this site with GitHub pages and a custom domain"
 date:   2015-11-28
 categories: tech
+comments: true
 ---
 
 ##For those who have a few minutes to read...

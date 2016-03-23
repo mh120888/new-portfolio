@@ -3,6 +3,7 @@ layout: post
 title:  "Exploring Flex - Part 1"
 date:   2016-03-22
 categories: tech
+comments: true
 ---
 
 For about as long as I’ve known about it, I’ve been opposed to using flexbox.  Although I think we need more modern methods for implementing complex layouts on the web, I’ve been very much turned off by the inconsistencies in implementation and even in syntax between different versions; as a developer who needs to support further back than just the latest version of IE/Edge, they’re pretty much a deal-breaker.

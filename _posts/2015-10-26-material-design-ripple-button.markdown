@@ -3,6 +3,7 @@ layout: post
 title:  "Material Design Ripple Button"
 date:   2015-10-26
 categories: design
+comments: true
 ---
 
 ##What is it?
@@ -65,7 +66,7 @@ As I mentioned, instead of redefining the same circle inside of each button, we�
 
 In addition to whatever styles we have to make our buttons look the way we’d like, we need to ensure that the svg canvas (the `<svg>` element) for each button is “behind” the button itself by adding position: relative to the button, then position: absolute to the svg and matching its dimensions to those of the button.
 
-We also need to give the svg a fill color - this is going to be the interior color of the elements on the svg canvas, which in other words is the color of our circle.  
+We also need to give the svg a fill color - this is going to be the interior color of the elements on the svg canvas, which in other words is the color of our circle.
 
 {% highlight css %}
 body {
