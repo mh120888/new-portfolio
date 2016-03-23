@@ -6,7 +6,7 @@ categories: tech
 comments: true
 ---
 
-##For those who have a few minutes to read...
+## For those who have a few minutes to read...
 Not too long ago, I decided I wanted to create a new personal site where I could share some information about myself and blog. I ended up settling on [Jekyll](https://jekyllrb.com/){:target="_blank"}.  I just started trying to write about my reasons for choosing Jekyll, then I realized that's not why I'm writing this post.  If you're curious about some arguments for using Jekyll, here's some reading material:
 
 - [5 reasons you should use Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html){:target='_blank'} *- by CloudCannon*
@@ -25,7 +25,7 @@ A few minutes later, I had my zone file open and ready to modify - some quick go
 
 What was slightly more annoying was realizing that I needed to modify the baseurl for the site to reflect the new domain. Since it had previously been set up to work with the github.io url that GitHub automatically provides, changing the domain name broke links all over the place, including links to assets like my stylesheets! Not to say this is the greatest design in the world, but it certainly looks nicer than what you'd be seeing with just user-agent styles.
 
-##tl;dr
+## tl;dr
 - You should use Jekyll for blogs
 - GitHub Pages make Jekyll even better
 - GitHub Pages + custom domain is very easy to set up

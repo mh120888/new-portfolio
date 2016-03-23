@@ -6,7 +6,7 @@ categories: design
 comments: true
 ---
 
-##What is it?
+## What is it?
 When a user clicks on a button, a ripple appears on the surface of the button that radiates outward from the location of the click and then fades away, much like a ripple appears on the surface of still water when someone tosses in a pebble.
 
 Here's a quick demo:
@@ -17,24 +17,24 @@ Here's a quick demo:
 
 This was inspired by [Dennis Gaebel's article on codrops](http://tympanus.net/codrops/2015/09/14/creating-material-design-ripple-effects-svg){:target='_blank'}. I wanted to go through his tutorial and recreate it myself, with some modifications to make it more reusable, and I wrote this post to describe the process in a simpler way.
 
-##Why?
+## Why?
 The simplest answer is that sometimes it’s just nice to see something a bit cool and different.
 
 That being said, there’s a certain kind of satisfaction a user gets from immediately receiving visual feedback from having clicked on a button.  Additionally, having the ripple effect start at the location of the click makes the interaction feel more personal.
 
 Microinteractions are important!
 
-##How does it work?
+## How does it work?
 Overall there’s not very much code that’s needed to make this work, after leveraging the awesome power of GSAP and jQuery (for convenience).
 
 The basic strategy - behind every button, there is also an svg canvas containing a circle.  Most of the time this circle is 2px by 2px and completely transparent, so you don’t see it, but when a user clicks on the button we are able to increase the circle’s opacity and scale it out.
 
-###Any external dependencies?
+### Any external dependencies?
 Yes. We are using GSAP’s TweenMax library to handle the animation of the svg.  While there are certainly ways to accomplish this using only vanilla js and CSS, the simplicity and cross-browser support that GSAP provides make it well worth the added weight (it’s actually only 34kb).
 
 We’re also using jQuery for convenience, but that could easily be replaced if needed.  GSAP is not dependant on any other libraries, but it does work well with jQuery.
 
-###Start with HTML
+### Start with HTML
 We start off with an svg symbol, which functions kind of like a template for the ripple.
 
 {% highlight html %}
@@ -62,7 +62,7 @@ Assuming each button on the page is actually an `<a>` instead of the more semant
 
 As I mentioned, instead of redefining the same circle inside of each button, we’re going to use the `<use>` element - read more about it [here](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use) - to pull in our circle.
 
-###Then CSS
+### Then CSS
 
 In addition to whatever styles we have to make our buttons look the way we’d like, we need to ensure that the svg canvas (the `<svg>` element) for each button is “behind” the button itself by adding position: relative to the button, then position: absolute to the svg and matching its dimensions to those of the button.
 
@@ -104,7 +104,7 @@ body {
 }
 {% endhighlight %}
 
-###And Finally Javascript
+### And Finally Javascript
 Most of the “magic” happens in the javascript layer, but as I promised it’s not going to be overly complicated.
 
 We want to bind the click event for every button on the page and define a callback function that includes the animation logic for our ripple.
