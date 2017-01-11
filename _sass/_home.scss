@@ -4,7 +4,7 @@
 	padding: 0 0 30px;
 	.img-wrapper, .text-wrapper {
 		display: table-cell;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 	.img-wrapper {
 		width: 25%;
@@ -23,8 +23,14 @@
 	}
 	h2	{
 		margin: 0 auto .5em;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
+}
+
+.emphasis {
+	margin: 0 auto;
+	font-size: 1.4em;
+	font-style: italic;
 }
 
 .section {
@@ -43,6 +49,25 @@
 .contact-info {
 	display: inline-block;
 	padding-right: 16px;
+}
+
+@media screen and (max-width: 850px) {
+	.home-header {
+		display: block;
+		h1 {
+			font-size: 2.5em;
+		}
+		.img-wrapper, .text-wrapper {
+			display: block;
+			padding: 0;
+			width: 100%;
+		}
+		.img-wrapper {
+			margin: 0 auto 2em;
+			text-align: center;
+			max-width: 300px;
+		}
+	}
 }
 
 @media screen and (max-width:600px) {
