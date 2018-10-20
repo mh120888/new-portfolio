@@ -2,9 +2,9 @@
 title: Matthew Higgins | Web Developer
 email: matthew.alan.higgins@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Matthew Higgins is a web developer currently located in the Los Angeles area. He has worked as both a front-end and full stack software developer with technologies including Ruby on Rails, Java, Spring, Spring Batch, and Clojure.
+  Matthew Higgins is a web developer currently located in the Cincinnati, Ohio area. He has worked as both a front-end and full stack software developer with technologies including React, RabbitMQ, TypeScript, Ruby on Rails, Java, and Clojure.
 footer_info: > # this means to ignore newlines until "baseurl:"
-  Software developer in Southern California
+  Software developer
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.matthewalanhiggins.com" # the base hostname & protocol for your site
 github_username:  mh120888
